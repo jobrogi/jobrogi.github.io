@@ -1,0 +1,434 @@
+/* Default */
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: fit-content;
+    background-color: #2b2b2b;
+
+    padding: 25px;
+}
+.important{
+    color: rgb(254, 176, 98);
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* Announcement */
+.announcement{
+    width: 100%;
+    height: fit-content;
+    padding: 10px 0px;
+    background-color: #feb062;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* Header */
+.header{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    min-height: 75px;
+    padding: 0 20px;
+    background-color: #131313;
+
+}
+/* left header */
+.header-left{
+    width: 50%;
+}
+.logo{
+    width: fit-content;
+    border: white solid 2px;
+    padding: 5px;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    transition: 1s;
+
+}
+.logo:hover{
+    transition: 1s;
+    margin-left:15px;
+    cursor: pointer;
+}
+
+/* right header */
+/* Current search bar is a palceholder */
+.header-right{
+    display: inline-flex;
+    width: 50%;
+    justify-content: end;
+}
+.search{
+    height: 35px;
+}
+.cart{
+    margin-left: 20px;
+    width: 32px;
+}
+.a{
+    width: fit-content;
+    margin: 0;
+    padding:0;
+}
+
+/* ------------------------------------------------------------------------------------ */
+/* Categories */
+.categories{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #feb062;
+    padding: 5px 10px;
+
+    text-align: center;
+
+}
+a {
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    width: 33.3%;
+
+}
+/* DropDown */
+.dropdown{
+    display: inline-flex;
+    flex-wrap: wrap;
+
+    height: fit-content;
+    width: 100%;
+}
+.category{
+    width: 33.3%;
+}
+.categories:hover .category-drop-down{
+    display: inline-flex;
+    flex-wrap: wrap;
+    height: fit-content;
+    transition: 1s;
+}
+.category-drop-down{
+    display: none;
+    height: 0px;
+    width: 100%;
+}
+.category-drop-down ul{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    line-height: 40px;
+    width: 33.3%;
+    margin: 0;
+    margin-top: 20px;
+    padding: 0;
+}
+.category-drop-down ul li{
+    list-style-type: none;
+    width: fit-content;
+    width: 100%;
+}
+
+.category-drop-down hr{
+    border:none;
+    height: 20px;
+       width: 90%;
+      height: 50px;
+      margin-top: 0;
+      border-bottom: 1px solid #1f1209;
+      box-shadow: 0 20px 20px -20px #333;
+    margin: -40px auto -10px; 
+}
+a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------------------------ */
+/* Content */
+.content{
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.man-cave{
+    /* border: blanchedalmond solid 1px; */
+    width: 100%;
+    height: 350px;
+
+    background-image: url(../Images/Man-cave-image.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50px 50px 50px 50px;
+
+    color: white;
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: .5;
+    text-align: center;
+    transition: 1s;
+
+}
+.man-cave:hover{
+    opacity: 1;
+    transition: 1s;
+    font-size: 44px;
+
+    color: #feb062;
+}
+p{
+    margin-top: 12%;
+}
+.work-space{
+    /* border: blue solid 1px; */
+    width: 50%;
+    min-height: fit-content;
+
+    background-image: url(../Images/Work-space-image.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50px 50px 50px 50px;
+
+
+    color: white;
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: .5;
+    text-align: center;
+    transition: 1s;
+}
+.work-space:hover{
+    opacity: 1;
+    transition: 1s;
+    font-size: 44px;
+
+    color: #feb062;
+
+
+}
+.game-space{
+    /* border: red solid 1px; */
+    width: 50%;
+    min-height: 300px;
+
+    background-image: url(../Images/Gaming-Room-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50px 50px 50px 50px;
+
+    color: white;
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: .5;
+    text-align: center;
+    transition: 1s;
+}
+.game-space:hover{
+    opacity: 1;
+    transition: 1s;
+    font-size: 44px;
+
+    color: #feb062;
+}
+.learn-more{
+    border: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #feb062;
+}
+.learn-more:hover{
+    border: none;
+    width: 100px;
+    height: 35px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #f18e2a;
+    transition: 1s;
+
+    cursor: pointer;
+}
+/* ------------------------------------------------------------------------------------ */
+/* Trending/New */
+/* Trending */
+
+.trending-container{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+    background-color: rgb(87, 81, 81);
+    height: fit-content;
+    width: 100%;
+
+    margin-top: 20px;
+    padding: 20px;
+}
+h2.trending-text{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 100%;
+    margin-bottom: 40px;
+    
+}
+.card{
+    width: 20%;
+    margin-right: 30px;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 1s;
+
+}
+.card img{
+    width: 100%;
+    
+    min-height: 230px;
+}
+.product-title a{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+.product-rating a{
+    color: white;
+    text-decoration: none;
+}
+.product-price a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #f18e2a;
+    text-decoration: none;
+}
+.checked{
+    color: #f18e2a;
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+/* MOBILE / TABLET */
+
+@media (max-width:320px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    /* navbar */
+    .logo{
+        display: none;
+    }
+    .logo-after{
+        display: block;
+       letter-spacing: -3px; 
+       padding-right: 8px;
+
+       width: fit-content;
+       border: white solid 2px;
+       padding: 5px;
+   
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       font-size: 28px;
+       color: white;
+       text-align: center;
+       transition: 1s;
+    }
+
+
+    /* search */
+    .search{
+        width: 60px;
+        transition: 1s;
+
+    }
+    .search:hover{
+        width: 80px;
+        transition: 1s;
+    }
+
+    .work-space{
+        width: 100%;
+        height: 300px;
+    }
+    .game-space{
+        width: 100%;
+    }
+
+    /* dropdown */
+    .category-drop-down ul{
+        width: 100%;
+    }
+}
+
+@media (max-width:480px)  { /* smartphones, Android phones, landscape iPhone */
+    .logo{
+        display: none;
+    }
+    .logo-after{
+        display: block;
+       letter-spacing: -3px; 
+       padding-right: 8px;
+
+       width: fit-content;
+       border: white solid 2px;
+       padding: 5px;
+   
+       font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       font-size: 28px;
+       color: white;
+       text-align: center;
+       transition: 1s;
+    }
+     .search{
+         width: 100px;
+         transition: 1s;
+ 
+     }
+     .search:hover{
+         width: 120px;
+         transition: 1s;
+     }
+
+    .work-space{
+        width: 100%;
+        height: 300px;
+    }
+    .game-space{
+        width: 100%;
+    }
+}
+@media (min-width: 481px){
+    .logo-after{
+        display: none;
+        transition: 1s;
+    }
+}
+@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
+.logo-after{
+    display: none;
+}
+}
+
+@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+
+}
+
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+
+}
+
+@media (min-width:1281px) { /* hi-res laptops and desktops */ 
+
+}
