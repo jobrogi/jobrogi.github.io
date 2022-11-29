@@ -370,6 +370,22 @@ h2.trending-text{
     .category-drop-down ul{
         width: 100%;
     }
+
+
+    /* Product Cards */
+    .trending-container{
+        justify-content: center;
+        align-items: center;
+    }
+    .card{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .card img{
+        min-height: 100px;
+    }
 }
 
 @media (max-width:480px)  { /* smartphones, Android phones, landscape iPhone */
@@ -408,16 +424,32 @@ h2.trending-text{
     .game-space{
         width: 100%;
     }
+
+        /* Product Cards */
+        .cards{
+            width: 100%;
+        }
+        .card img{
+            min-height: 100px;
+        }
 }
 @media (min-width: 481px){
     .logo-after{
         display: none;
         transition: 1s;
     }
+
+    .card img{
+        min-height: 100px;
+    }
 }
 @media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ 
 .logo-after{
     display: none;
+}
+
+.card img{
+    min-height: 100px;
 }
 }
 
@@ -431,4 +463,10 @@ h2.trending-text{
 
 @media (min-width:1281px) { /* hi-res laptops and desktops */ 
 
+    .man-cave{
+        height: 500px;
+    }
+    .work-space{
+        height: 500px;
+    }
 }
